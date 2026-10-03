@@ -1,4 +1,4 @@
-# Analyse de la qualité de l'eau potable — Bouches-du-Rhône (2024)
+# Analyse de la qualité de l'eau potable: Bouches-du-Rhône (2024)
 
 Projet d'analyse de données appliqué à un sujet environnemental et local : la qualité de l'eau distribuée aux habitants des Bouches-du-Rhône en 2024, à partir des données officielles du contrôle sanitaire.
 
@@ -8,15 +8,15 @@ L'eau potable est un besoin vital, et sa conformité concerne directement chaque
 
 ## Problématique
 
-Quels facteurs — paramètres physico-chimiques, zones géographiques — sont le plus souvent associés à la non-conformité de l'eau distribuée dans les Bouches-du-Rhône en 2024 ?
+Quels facteurs (paramètres physico-chimiques, zones géographiques) sont le plus souvent associés à la non-conformité de l'eau distribuée dans les Bouches-du-Rhône en 2024 ?
 
 ## Source des données
 
 - Base SISE-Eaux (Ministère chargé de la Santé), diffusée sur data.gouv.fr
 - Périmètre : département 013 (Bouches-du-Rhône), année 2024
 - Deux fichiers utilisés :
-  - `DIS_PLV_2024_013.txt` — un prélèvement par ligne (commune, date, verdicts de conformité)
-  - `DIS_RESULT_2024_013.txt` — un paramètre mesuré par ligne, plusieurs lignes par prélèvement
+  - `DIS_PLV_2024_013.txt`: un prélèvement par ligne (commune, date, verdicts de conformité)
+  - `DIS_RESULT_2024_013.txt`:  un paramètre mesuré par ligne, plusieurs lignes par prélèvement
 - Lien entre les deux fichiers : le champ `referenceprel`
 
 ## Méthodologie
@@ -25,7 +25,7 @@ Quels facteurs — paramètres physico-chimiques, zones géographiques — sont 
 - Nettoyage de RESULT : suppression de colonnes non exploitables (`limitequal`, vide à 100% sur ce périmètre), suppression des lignes sans valeur mesurée
 - Déduplication de PLV sur `referenceprel` : certains prélèvements étaient rattachés à plusieurs réseaux de distribution différents, ce qui créait des doublons avant fusion
 - Fusion PLV + RESULT sur `referenceprel`
-- Choix méthodologique important : les seuils réglementaires stricts (`plvconformitechimique`) ne sont dépassés que sur 12 prélèvements sur 4 727 (0,25%) — un échantillon trop faible pour une analyse statistique robuste. L'analyse approfondie s'appuie donc sur les références de qualité (`plvconformitereferencechim`, 536 cas non conformes), un indicateur moins critique sur le plan sanitaire mais avec une base statistique exploitable
+- Choix méthodologique important : les seuils réglementaires stricts (`plvconformitechimique`) ne sont dépassés que sur 12 prélèvements sur 4 727 (0,25%) un échantillon trop faible pour une analyse statistique robuste. L'analyse approfondie s'appuie donc sur les références de qualité (`plvconformitereferencechim`, 536 cas non conformes), un indicateur moins critique sur le plan sanitaire mais avec une base statistique exploitable
 
 ## Résultats clés
 
