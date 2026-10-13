@@ -4,7 +4,7 @@ Projet d'analyse de données appliqué à un sujet environnemental et local : la
 
 ## Pourquoi ce projet
 
-L'eau potable est un besoin vital, et sa conformité concerne directement chaque habitant d'une commune. J'ai choisi ce sujet pour deux raisons : mon intérêt pour l'environnement, et l'envie d'appliquer mes compétences en chimiométrie (acquises lors d'un stage au CNRS-IMBE) à un cas concret et local, à l'échelle de ma région.
+L'eau potable est un besoin vital, et sa conformité concerne directement chaque habitant d'une commune. J'ai choisi ce sujet pour deux raisons : mon intérêt pour l'environnement, et l'envie d'appliquer mes compétences à un cas concret.
 
 ## Problématique
 
