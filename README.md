@@ -36,7 +36,7 @@ Quels facteurs (paramètres physico-chimiques, zones géographiques) sont le plu
 
 ## Limites de l'analyse
 
-- L'analyse détaillée par paramètre repose sur les références de qualité, pas sur les seuils sanitaires stricts (trop peu de cas pour ces derniers) — à ne pas confondre avec un problème de sécurité sanitaire
+- L'analyse détaillée par paramètre repose sur les références de qualité, pas sur les seuils sanitaires stricts (trop peu de cas pour ces derniers).
 - La commune associée à chaque prélèvement est la commune principale du réseau de distribution ; les communes secondaires desservies par un même réseau (environ 9% des réseaux du département) ne sont pas comptabilisées séparément
 - Les résultats montrent des corrélations, pas des relations de cause à effet démontrées
 - Analyse limitée à une seule année et à un seul département
